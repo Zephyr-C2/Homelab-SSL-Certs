@@ -39,21 +39,21 @@ Installation was easy, I followed the documentation's [quick setup guide](https:
 * Select `Web editor`
 
 * Copy paste the `docker-compose.yml` from the docs:
-  
-  ``` 
-  services:
-    app:
-      image: 'jc21/nginx-proxy-manager:latest'
-      container_name: nginxproxymanager
-      restart: unless-stopped
-      ports:
-        - '80:80'
-        - '81:81'
-        - '443:443'
-      volumes:
-        - ./data:/data
-        - ./letsencrypt:/etc/letsencrypt
-  ```
+
+``` 
+services:
+  app:
+  image: 'jc21/nginx-proxy-manager:latest
+  container_name: nginxproxymanager
+  restart: unless-stopped
+  ports:
+    - '80:80'
+    - '81:81'
+    - '443:443'
+  volumes:
+    - ./data:/data
+    - ./letsencrypt:/etc/letsencrypt
+```
 
 * Select `Deploy the stack` 
 
@@ -278,7 +278,7 @@ proxy_set_header X-Forwarded-Proto $scheme;
 
 If you attempt to access qBittorent through the NPM proxy without doing this, you will lock your account. If you did this then you need to:
 
-#### Edit the file:
+Edit the file:
 
 1. Stop the container.
 
